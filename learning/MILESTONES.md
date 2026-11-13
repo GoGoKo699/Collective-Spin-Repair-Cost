@@ -213,7 +213,7 @@ does not attempt to enumerate every calculation.
 ### M24 — A uniform lower bound from a finite polarization supply
 
 - **Central question:** Why does pumping $m$ spins give the order $N+m^2$?
-- **Understanding target:** Use the integer-valued $K$, the event $K\ne0$ and its second moment to interpret the bound $F_{p,m}\ge p^4(N+m^2)$ for $0<p\le1/2$. Connect $m=\lfloor B/\kappa\rfloor$ to a uniform lower order when $B\ge\kappa$. Keep the finite-time positive polarization lower bound explicit.
+- **Understanding target:** Use the integer-valued $K$, the event $K\ne0$ and its second moment to interpret the bound $F_{p,m}\ge p^4(N+m^2)$ for $0\lt p\le1/2$. Connect $m=\lfloor B/\kappa\rfloor$ to a uniform lower order when $B\ge\kappa$. Keep the finite-time positive polarization lower bound explicit.
 - **Dependencies and story role:** Uses M17–M19 and M21–M23. Reveal how the local pump and collective amplification reach the same intermediate scale as the converse.
 - **Conceptual connection:** The quadratic term counts the maintained polarization supply, while the linear term can use the rest of the mixed ensemble.
 - **Source pointers:** Anchor Chapter 2 for the probabilistic state description; [Construction](../science/construction.md), Section 3; [Interpretation](../science/interpretation.md), mixed-probe example.

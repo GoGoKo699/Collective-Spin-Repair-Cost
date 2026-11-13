@@ -41,7 +41,7 @@ Let $b=B/\kappa$. For $1\le b\le N$ the protocol in [Construction](construction.
 | Physical noisy spins | $N$ |
 | Initial state | $I/2^N$ |
 | Locally pumped spins | $m=\lfloor b\rfloor$ |
-| Jump on each pumped spin | $\sqrt\kappa\,|0\rangle\langle1|$ |
+| Jump on each pumped spin | $\sqrt\kappa\,\lvert0\rangle\langle1\rvert$ |
 | Instantaneous charged repair | $m\kappa\le B$ during pumping; zero during the final pulse |
 | Pump duration | $s=T-\tau\ge\kappa^{-1}$ |
 | Final collective Hamiltonian | $H_{\rm pulse}=\Omega X^{\otimes N}$ |

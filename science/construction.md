@@ -100,7 +100,7 @@ gives $F_{p,m}=4\mathbb E[g_s^2\tanh^2(aK)]$. The unpumped signs have conditiona
 
 ## 3. A uniform lower bound
 
-For $0<p\le1/2$ and $m\ge1$,
+For $0\lt p\le1/2$ and $m\ge1$,
 
 $$
 p^4(N+m^2)\le F_{p,m}
@@ -211,7 +211,7 @@ $$
 
 This is a conservative polynomial strength bound. It is not claimed optimal or affordable on a specified platform. The pulse is an $N$-body Casimir-preserving Hamiltonian; its operator norm is $\Omega$. A synthesis using a different collective interaction has its own strength, duration and gate costs.
 
-For a prescribed output time $T\ge\kappa^{-1}\log(N+2)$, pump for $s=T-\tau$ and use the final interval for this pulse. Since $m\le N$ and $p_*<1/2$, (7) gives $\tau\le1/(64\kappa)$, whereas $\log(N+2)\ge\log3>1+1/64$. Therefore $s\ge\kappa^{-1}$ for all $N\ge1$. Thus (3) and (6) apply at the same deterministic output time as the late-time converse. This is an actual finite-duration preparation, with noise present throughout.
+For a prescribed output time $T\ge\kappa^{-1}\log(N+2)$, pump for $s=T-\tau$ and use the final interval for this pulse. Since $m\le N$ and $p_*\lt 1/2$, (7) gives $\tau\le1/(64\kappa)$, whereas $\log(N+2)\ge\log3>1+1/64$. Therefore $s\ge\kappa^{-1}$ for all $N\ge1$. Thus (3) and (6) apply at the same deterministic output time as the late-time converse. This is an actual finite-duration preparation, with noise present throughout.
 
 ## 5. The SQL baseline with no charged repair
 
@@ -268,7 +268,7 @@ $$
 
 These global spin-sector resets spend no charged symmetry-breaking repair. Their highly structured jumps and large supplied rate are the price within the free-control model. They close the baseline in that model; they do not provide a local reservoir implementation.
 
-Combining this baseline for $0\le b<1$, the pumped construction for $1\le b\le N$, and $m=N$ for $b>N$, gives a single uniform constructive consequence: at every prescribed $T\ge\kappa^{-1}\log(N+2)$ there is an allowed preparation from $I/2^N$ satisfying
+Combining this baseline for $0\le b\lt 1$, the pumped construction for $1\le b\le N$, and $m=N$ for $b>N$, gives a single uniform constructive consequence: at every prescribed $T\ge\kappa^{-1}\log(N+2)$ there is an allowed preparation from $I/2^N$ satisfying
 
 $$
 F_Q(\rho(T),S_z)

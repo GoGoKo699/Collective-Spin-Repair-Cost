@@ -336,7 +336,7 @@ $$
 \le (12+6k)(N+b^2).
 $$
 
-This proves the upper order for the full $B\ge0$ frontier at fixed $k$. The [construction](construction.md) supplies the lower order, with the collective-operation resource qualification made explicit. The intermediate regime $1\le b\le N$ uses counted local pumps and a terminal collective pulse; the linear baseline at $b<1$ uses supplied global sector-reset jumps.
+This proves the upper order for the full $B\ge0$ frontier at fixed $k$. The [construction](construction.md) supplies the lower order, with the collective-operation resource qualification made explicit. The intermediate regime $1\le b\le N$ uses counted local pumps and a terminal collective pulse; the linear baseline at $b\lt 1$ uses supplied global sector-reset jumps.
 
 ## 6. Finite record feedback and heralding
 
