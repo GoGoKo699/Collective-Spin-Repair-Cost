@@ -1,0 +1,16 @@
+# Collective Spin Repair Cost
+
+This repository studies the local symmetry-changing repair needed to prepare collective-spin phase probes under persistent independent isotropic depolarization. Read the actual model and proof qualifiers with every scaling claim.
+
+## Scientific routes
+
+- Exact model, hard instantaneous budget B, bounded sensor support k, protected auxiliaries, deterministic output time and principal theorem: science/model.md.
+- Noise normalization, Casimir identity, repair drift, finite-time initial-resource term, record-assisted QFI and heralding yield: science/converse.md.
+- Finite local pump, exact complementary-string mixed-cat QFI, uniform lower bound, finite noisy collective pulse and the supplied-control no-repair SQL floor: science/construction.md.
+- What is charged and what is supplied; sufficient collective norm/rate scalings; pulse duration; readout and physical-resource limits: science/resources.md.
+- Physical story, repair scales, differential-signal counterexample and timing/noise boundaries: science/interpretation.md.
+- Connected dependency route: science/README.md.
+- Attribution and closest primary theorems: references/RELATED_WORK.md and references/references.bib.
+- Reproduction and actual finite checks: verification/README.md, verification/verify.py and verification/finite_checks.json.
+
+The headline order uses a prescribed time T >= log(N+2)/kappa, fixed repair locality, and arbitrarily strong supplied controls whose individual Hamiltonians/jumps preserve the SENSOR Casimir. Parameter encoding follows preparation. Average repair budgets, unrestricted random stopping, generic local noise, differential generators and stationary quadratic-QFI attainment are different claims. Do not infer laboratory/runtime advantage or independent proof certification from the repository's checks.
