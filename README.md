@@ -47,6 +47,10 @@ Start with the [scientific guide](science/README.md), or follow the direct route
 
 Spin-sector leakage and mixed-state metrological amplification are established ingredients. The contribution is the all-control repair-strength frontier under the stated assumptions, together with a matching endpoint preparation account. The [primary-source comparison](references/RELATED_WORK.md) and [bibliography](references/references.bib) identify those inherited results and distinguish the closest preparation theorems.
 
+## Learn the project
+
+The [learning guide](learning/README.md) connects Breuer–Petruccione, *The Theory of Open Quantum Systems* (2002), to this result. Use the [source-to-project bridge](learning/BRIDGE.md) for notation, the missing collective-spin and metrology steps, and worked examples. The [30-milestone map](learning/MILESTONES.md) follows the background ideas into the repair converse, matching construction and physical limits.
+
 ## Reproduce the checks
 
 With Python 3.12:

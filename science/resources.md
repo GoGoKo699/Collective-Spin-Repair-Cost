@@ -55,7 +55,7 @@ For prescribed $T\ge\kappa^{-1}\log(N+2)$ these choices fit into the same determ
 
 The displayed $\Omega$ ranges from a sufficient order $\kappa N^2$ near the SQL regime to order $\kappa N$ when $m$ is proportional to $N$. These are conservative **sufficient** norm scalings for this direct many-body pulse, not necessary collective-strength bounds. An implementation through one-axis twisting or another interaction must charge that implementation's own norm, elapsed time, precision and compilation overhead. No polynomial elementary-gate compiler for the whole preparation is supplied by the repair theorem.
 
-The optional no-repair SQL baseline uses the explicitly specified global spin-sector reset generator at a sufficient rate $64\kappa N^2$. Its jumps commute with $C$, but are highly engineered and not local reservoirs. It establishes an order-$N$ floor under the full supplied free class, without claiming a low-cost physical realization.
+The no-repair SQL baseline uses the explicitly specified global spin-sector reset generator at a sufficient rate $64\kappa N^2$. Its jumps commute with $C$, but are highly engineered and not local reservoirs. It establishes an order-$N$ floor under the full supplied free class, without claiming a low-cost physical realization.
 
 ## Why the time and output conventions matter
 

@@ -438,5 +438,5 @@ $$
 
 Then $\sum_i g_i(t)=b(t)$. If charged controls touch only $r$ sensors and every such sensor has load at most $\Gamma$, their total cap is $B\le r\Gamma$. Equation (32) gives the addressed-strength requirement $r\Gamma=\Omega(\kappa N)$.
 
-The proof is specific to the stated independent isotropic noise and homogeneous signal. The free class preserves the *sensor* Casimir; preserving the total spin of sensors plus a controller is a different condition. The lower construction establishes a probe at its endpoint, and does not establish a stationary attaining state. The scientific attribution and the comparison with existing local-noise, symmetry and mixed-probe results are kept in [related work](../references/RELATED_WORK.md).
+The proof is specific to the stated independent isotropic noise and homogeneous signal. The free class preserves the *sensor* Casimir; preserving the total spin of sensors plus a controller is a different condition. The lower construction establishes a probe at its endpoint, and does not establish a stationary quadratic-QFI attaining state. The scientific attribution and the comparison with existing local-noise, symmetry and mixed-probe results are kept in [related work](../references/RELATED_WORK.md).
 
