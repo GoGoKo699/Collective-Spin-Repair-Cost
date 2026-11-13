@@ -16,7 +16,7 @@ For a Pauli operator on one sensor,
 
 ```math
 \frac{\kappa}{4}\sum_{a=x,y,z}
-\left(\sigma_i^a\sigma_i^b\sigma_i^a-\sigma_i^b\right)
+\bigl(\sigma_i^a\,\sigma_i^b\,\sigma_i^a-\sigma_i^b\bigr)
 =-\kappa\sigma_i^b.
 ```
 
