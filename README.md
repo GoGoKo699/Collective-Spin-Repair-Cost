@@ -6,30 +6,30 @@ Collective control can reshape a spin ensemble without changing its total-spin s
 
 ## Main result
 
-For $N$ physical spin-half sensors with independent depolarization at Bloch-decay rate $\kappa$, let $B$ cap the instantaneous support-weighted strength of local Hamiltonian and dissipative repair. Each charged term touches at most a fixed number $k$ of sensors. At every prescribed output time
+For $`N`$ physical spin-half sensors with independent depolarization at Bloch-decay rate $`\kappa`$, let $`B`$ cap the instantaneous support-weighted strength of local Hamiltonian and dissipative repair. Each charged term touches at most a fixed number $`k`$ of sensors. At every prescribed output time
 
-$$
+```math
 T\ge\frac{\log(N+2)}{\kappa},
-$$
+```
 
 the optimal QFI for a subsequent homogeneous collective phase imprint has order
 
-$$
+```math
 \boxed{
 F_Q^{\rm opt}(N,B,T)
 =\Theta_k\!\left(
 \min\left\lbrace N^2,\;N+\left(\frac B\kappa\right)^2\right\rbrace 
 \right).
 }
-$$
+```
 
 The [exact model and theorem](science/model.md) specify the allowed controls, fixed output-time contract, initial-resource term and constants. The converse permits arbitrary initial states, protected finite ancillas and finite preparation records. The construction starts from maximally mixed sensors. Its collective controls are supplied resources with separately stated strength and implementation limits.
 
 | Scientific consequence | Supported statement |
 | --- | --- |
 | Arbitrarily powerful sector-preserving processing | Cannot replace the local repair budget in the converse. |
-| Increasing gain over linear QFI | Requires $B/(\kappa\sqrt N)\to\infty$ after the initial resource has decayed. |
-| A fixed fraction of $N^2$ probe QFI | Requires and, in the supplied-control model, admits $B=\Theta(\kappa N)$. |
+| Increasing gain over linear QFI | Requires $`B/(\kappa\sqrt N)\to\infty`$ after the initial resource has decayed. |
+| A fixed fraction of $`N^2`$ probe QFI | Requires and, in the supplied-control model, admits $`B=\Theta(\kappa N)`$. |
 | Heralding at a prescribed output time | The accepted QFI is weighted by the actual acceptance probability. |
 | Finite collective pulse | A fixed-measurement witness preserves a constant fraction of ideal QFI while noise remains active; sufficient pulse strengths are explicit. |
 
