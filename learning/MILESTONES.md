@@ -83,7 +83,7 @@ does not attempt to enumerate every calculation.
 ### M08 — Support, norm and an instantaneous repair budget
 
 - **Central question:** What exactly is counted when a repair term touches several sensors and an auxiliary?
-- **Understanding target:** Read $`|X|\|h_X\|`$ and $`|X|\|L_{X\mu}\|^2`$ as support-weighted contributions with units of inverse time. The support counts physical sensors, including nonadjacent ones. Ancillary coupling is allowed under the same norm rule. The budget belongs to the supplied decomposition and obeys a hard cap at each time.
+- **Understanding target:** Read $`|X|\Vert h_X\Vert `$ and $`|X|\Vert L_{X\mu}\Vert ^2`$ as support-weighted contributions with units of inverse time. The support counts physical sensors, including nonadjacent ones. Ancillary coupling is allowed under the same norm rule. The budget belongs to the supplied decomposition and obeys a hard cap at each time.
 - **Dependencies and story role:** Uses M02–M03 and M06–M07. Turn the control distinction into the resource contract used by both bounds.
 - **Conceptual connection:** A small long-time average cannot rule out an intense terminal repair burst; the pointwise cap will do essential work.
 - **Source pointers:** Anchor Chapter 3, Sections 3.2.1–3.2.3; [Model](../science/model.md), Section 2; [Resources](../science/resources.md), “Charged repair.”
@@ -149,7 +149,7 @@ does not attempt to enumerate every calculation.
 ### M16 — What one microscopic repair term can change
 
 - **Central question:** How does physical support limit a local repair's action on collective spin?
-- **Understanding target:** Split $`S_a`$ into its supported and complementary parts and use $`\|S_{X,a}\|=|X|/2`$ to bound their commutator. Apply this to a Hamiltonian term and to a jump's adjoint action. An arbitrarily large protected auxiliary does not enlarge the supported physical spin operator's norm.
+- **Understanding target:** Split $`S_a`$ into its supported and complementary parts and use $`\Vert S_{X,a}\Vert =|X|/2`$ to bound their commutator. Apply this to a Hamiltonian term and to a jump's adjoint action. An arbitrarily large protected auxiliary does not enlarge the supported physical spin operator's norm.
 - **Dependencies and story role:** Uses M07–M08 and M14. Introduce the elementary repair estimate before summing over a complete controller.
 - **Conceptual connection:** The support-weighted budget has been chosen to control these commutators, including coherent repair and ancillary purity transfer.
 - **Source pointers:** Anchor Chapter 3, Sections 3.2.1–3.2.3 for adjoint dynamics; [Converse](../science/converse.md), Section 2.
@@ -157,7 +157,7 @@ does not attempt to enumerate every calculation.
 ### M17 — The square-root repair drift
 
 - **Central question:** Why does the universal repair contribution scale as $`B\sqrt{x}`$ rather than $`BN`$?
-- **Understanding target:** Collect the first-moment repair operators into $`A_a=\mathcal R^\dagger(S_a)`$, with $`\|A_a\|\le B`$. Connect the anticommutator expectation to weighted operator Cauchy–Schwarz, then combine the three spin components. Track the positive jump remainder separately as the $`3kB`$ correction.
+- **Understanding target:** Collect the first-moment repair operators into $`A_a=\mathcal R^\dagger(S_a)`$, with $`\Vert A_a\Vert \le B`$. Connect the anticommutator expectation to weighted operator Cauchy–Schwarz, then combine the three spin components. Track the positive jump remainder separately as the $`3kB`$ correction.
 - **Dependencies and story role:** Uses M07, M08 and M16. Assemble the local estimates into the load-bearing inequality for an arbitrary many-body state.
 - **Conceptual connection:** Keeping the actual moment in the bound is what produces the intermediate quadratic repair scale; a rough maximum-norm bound would lose it.
 - **Source pointers:** Anchor Chapter 3, Sections 3.2.1–3.2.3 for the generator; [Converse](../science/converse.md), Section 3.

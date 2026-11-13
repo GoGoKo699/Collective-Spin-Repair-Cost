@@ -12,41 +12,45 @@ x(t)=\mathrm{Tr}[C\rho_{SA}(t)].
 
 For a Pauli operator on one sensor,
 
+**Equation (1).**
+
 ```math
 \frac{\kappa}{4}\sum_{a=x,y,z}
 \left(\sigma_i^a\sigma_i^b\sigma_i^a-\sigma_i^b\right)
 =-\kappa\sigma_i^b.
-\tag{1}
 ```
 
 A Pauli product supported on two distinct sensors therefore decays at rate $`2\kappa`$ under the adjoint noise generator. Expanding the Casimir gives
+
+**Equation (2).**
 
 ```math
 C=\frac{3N}{4}I
 +\frac14\sum_{i\ne j}\sum_{a=x,y,z}
 \sigma_i^a\sigma_j^a.
-\tag{2}
 ```
 
 The identity part is fixed, so
+
+**Equation (3).**
 
 ```math
 \boxed{
 \mathcal N_\kappa^\dagger(C)
 =-2\kappa\left(C-\frac{3N}{4}I\right).
 }
-\tag{3}
 ```
 
 This is an operator identity on the full sensor Hilbert space. No permutation symmetry of the state is required.
 
 If $`[H_0,C]=0`$ and $`[J,C]=0`$, then
 
+**Equation (4).**
+
 ```math
 i[H_0,C]=0,\qquad
 \mathcal D[J]^\dagger(C)
 =J^\dagger C J-\frac12\lbrace J^\dagger J,C\rbrace =0.
-\tag{4}
 ```
 
 The second equality uses the individual jump commutation condition, which also implies $`[J^\dagger,C]=0`$. Consequently the free control generator contributes exactly zero to the Casimir drift.
@@ -59,18 +63,20 @@ Without repair, (3)–(4) give
 
 and hence
 
+**Equation (5).**
+
 ```math
 x(t)=\frac{3N}{4}
 +\left(x(0)-\frac{3N}{4}\right)e^{-2\kappa t}.
-\tag{5}
 ```
 
 For a trace-preserving instantaneous free channel with Kraus operators $`K_j`$ commuting with $`C`$,
 
+**Equation (6).**
+
 ```math
 \sum_j K_j^\dagger C K_j
 =C\sum_jK_j^\dagger K_j=C.
-\tag{6}
 ```
 
 Thus (5), and the comparison bounds below, continue across finite inserted free channels.
@@ -85,28 +91,32 @@ S_a=S_{X,a}+S_{X^c,a},
 S_{X,a}=\frac12\sum_{i\in X}\sigma_i^a.
 ```
 
-A term $`O_X`$ supported on $`X`$ and an arbitrary protected ancilla commutes with $`S_{X^c,a}`$. Since $`\|S_{X,a}\|=q/2`$,
+A term $`O_X`$ supported on $`X`$ and an arbitrary protected ancilla commutes with $`S_{X^c,a}`$. Since $`\Vert S_{X,a}\Vert =q/2`$,
+
+**Equation (7).**
 
 ```math
-\|[S_a,O_X]\|
-=\|[S_{X,a},O_X]\|
-\le q\|O_X\|.
-\tag{7}
+\Vert [S_a,O_X]\Vert 
+=\Vert [S_{X,a},O_X]\Vert 
+\le q\Vert O_X\Vert .
 ```
 
 The ancilla dimension does not change this estimate.
 
 For a Hamiltonian term, the derivation rule gives
 
+**Equation (8).**
+
 ```math
 i[h_X,S_a^2]
 =\lbrace S_a,i[h_X,S_a]\rbrace ,
 \qquad
-\|i[h_X,S_a]\|\le q\|h_X\|.
-\tag{8}
+\Vert i[h_X,S_a]\Vert \le q\Vert h_X\Vert .
 ```
 
 For a jump $`L_X`$, its adjoint dissipator obeys
+
+**Equation (9).**
 
 ```math
 \mathcal D[L_X]^\dagger(S_a)
@@ -114,18 +124,20 @@ For a jump $`L_X`$, its adjoint dissipator obeys
 L_X^\dagger[S_a,L_X]
 +[L_X^\dagger,S_a]L_X
 \right).
-\tag{9}
 ```
 
 Equations (7)–(9) imply
 
+**Equation (10).**
+
 ```math
-\|\mathcal D[L_X]^\dagger(S_a)\|
-\le q\|L_X\|^2.
-\tag{10}
+\Vert \mathcal D[L_X]^\dagger(S_a)\Vert 
+\le q\Vert L_X\Vert ^2.
 ```
 
 The dissipative product identity is
+
+**Equation (11).**
 
 ```math
 \begin{aligned}
@@ -133,15 +145,15 @@ The dissipative product identity is
 ={}&\lbrace S_a,\mathcal D[L_X]^\dagger(S_a)\rbrace \\
 &+[S_a,L_X]^\dagger[S_a,L_X].
 \end{aligned}
-\tag{11}
 ```
 
 It follows by expanding both sides; the last term is positive. In particular,
 
+**Equation (12).**
+
 ```math
 0\le [S_a,L_X]^\dagger[S_a,L_X]
-\le q^2\|L_X\|^2 I.
-\tag{12}
+\le q^2\Vert L_X\Vert ^2 I.
 ```
 
 These estimates apply to the actual Hamiltonian and jump decomposition in the budget. They do not require an interpretation of individual jumps as observed events.
@@ -156,26 +168,30 @@ A_a=\mathcal R^\dagger(S_a).
 
 Each $`A_a`$ is Hermitian. From the budget definition and (8), (10),
 
+**Equation (13).**
+
 ```math
-\|A_a\|
+\Vert A_a\Vert 
 \le
-\sum_X q\|h_X\|
-+\sum_{X,\mu}q\|L_{X\mu}\|^2
+\sum_X q\Vert h_X\Vert 
++\sum_{X,\mu}q\Vert L_{X\mu}\Vert ^2
 =b(t).
-\tag{13}
 ```
 
 Summing (8) and (11) over all terms gives
+
+**Equation (14).**
 
 ```math
 \mathcal R^\dagger(C)
 =\sum_a\lbrace S_a,A_a\rbrace 
 +\sum_{X,\mu,a}
 [S_a,L_{X\mu}]^\dagger[S_a,L_{X\mu}].
-\tag{14}
 ```
 
 For every density operator, the weighted operator Cauchy–Schwarz inequality gives
+
+**Equation (15).**
 
 ```math
 \begin{aligned}
@@ -185,10 +201,11 @@ For every density operator, the weighted operator Cauchy–Schwarz inequality gi
 \sqrt{\mathrm{Tr}(\rho A_a^2)}\\
 &\le b(t)\sqrt{\langle S_a^2\rangle}.
 \end{aligned}
-\tag{15}
 ```
 
 Therefore
+
+**Equation (16).**
 
 ```math
 \begin{aligned}
@@ -196,10 +213,11 @@ Therefore
 &\le 2b(t)\sum_a\sqrt{\langle S_a^2\rangle}\\
 &\le 2\sqrt3\,b(t)\sqrt{x}.
 \end{aligned}
-\tag{16}
 ```
 
 Using $`q\le k`$ in the positive remainder of (14),
+
+**Equation (17).**
 
 ```math
 \begin{aligned}
@@ -207,13 +225,14 @@ Using $`q\le k`$ in the positive remainder of (14),
 \left\langle
 [S_a,L_{X\mu}]^\dagger[S_a,L_{X\mu}]
 \right\rangle
-&\le3\sum_{X,\mu}q^2\|L_{X\mu}\|^2\\
+&\le3\sum_{X,\mu}q^2\Vert L_{X\mu}\Vert ^2\\
 &\le3k\,b(t).
 \end{aligned}
-\tag{17}
 ```
 
 Combining (3), (4), (14)–(17) and $`b(t)\le B`$ proves
+
+**Equation (18).**
 
 ```math
 \boxed{
@@ -222,7 +241,6 @@ Combining (3), (4), (14)–(17) and $`b(t)\le B`$ proves
 -2\kappa\left(x-\frac{3N}{4}\right)
 +2\sqrt3\,B\sqrt{x}+3kB.
 }
-\tag{18}
 ```
 
 The estimate includes coherent local control, dissipative repair, protected ancillary systems and arbitrarily strong free sector-preserving dynamics. It does not assume independent repair operations or a product state.
@@ -233,23 +251,27 @@ The square-root dependence in the repair term is consequential. Replacing it by 
 
 Young's inequality gives
 
+**Equation (19).**
+
 ```math
 2\sqrt3\,B\sqrt{x}
 \le \kappa x+\frac{3B^2}{\kappa}.
-\tag{19}
 ```
 
 Thus
+
+**Equation (20).**
 
 ```math
 \dot x
 \le
 -\kappa x+\frac{3\kappa N}{2}
 +\frac{3B^2}{\kappa}+3kB.
-\tag{20}
 ```
 
 Multiplying by $`e^{\kappa t}`$ and integrating yields
+
+**Equation (21).**
 
 ```math
 \boxed{
@@ -262,7 +284,6 @@ e^{-\kappa T}x_0
 +3k\frac B\kappa
 \right].
 }
-\tag{21}
 ```
 
 At every finite insertion satisfying (6), $`x`$ is unchanged, so the same integrating-factor comparison holds over the full prescribed interval.
@@ -273,23 +294,25 @@ For any stationary joint state, (20) with $`\dot x=0`$ implies the bracketed upp
 
 For a finite-dimensional density operator $`\rho=\sum_r\lambda_r|r\rangle\langle r|`$ and a Hermitian generator $`G`$, our QFI convention is
 
+**Equation (22).**
+
 ```math
 F_Q(\rho,G)
 =
 2\sum_{\lambda_r+\lambda_s>0}
 \frac{(\lambda_r-\lambda_s)^2}{\lambda_r+\lambda_s}
 |\langle r|G|s\rangle|^2.
-\tag{22}
 ```
 
 The inequality $`(\lambda_r-\lambda_s)^2\le(\lambda_r+\lambda_s)^2`$, applied after replacing $`G`$ by $`G-\langle G\rangle I`$, gives the standard bound
 
+**Equation (23).**
+
 ```math
 F_Q(\rho,G)\le4\mathrm{Var}_\rho(G).
-\tag{23}
 ```
 
-For $`G=\mathbf n\cdot\mathbf S\otimes I_A`$ with $`\|\mathbf n\|_2=1`$, a collective rotation of coordinates gives
+For $`G=\mathbf n\cdot\mathbf S\otimes I_A`$ with $`\Vert \mathbf n\Vert _2=1`$, a collective rotation of coordinates gives
 
 ```math
 G^2\le C\otimes I_A.
@@ -297,28 +320,33 @@ G^2\le C\otimes I_A.
 
 Hence
 
+**Equation (24).**
+
 ```math
 F_Q(\rho_{SA},G)\le4\langle C\rangle=4x.
-\tag{24}
 ```
 
 The spectrum of $`G`$ lies in $`[-N/2,N/2]`$, also on the joint sensor–ancilla space. Its variance is at most $`N^2/4`$, giving the independent cap
 
+**Equation (25).**
+
 ```math
 F_Q(\rho_{SA},G)\le N^2.
-\tag{25}
 ```
 
 Substituting (21) in (24) and taking the minimum with (25) proves Theorem 1, equation (9) of the [model](model.md).
 
 The Casimir spectrum is $`j(j+1)`$, $`j\le N/2`$, so $`4x_0\le N(N+2)`$. If $`T\ge\log(N+2)/\kappa`$, then
 
+**Equation (26).**
+
 ```math
 4e^{-\kappa T}x_0\le N.
-\tag{26}
 ```
 
 Using $`1-e^{-\kappa T}\le1`$ proves the uniform finite-time bound
+
+**Equation (27).**
 
 ```math
 F_Q\le
@@ -326,7 +354,6 @@ F_Q\le
 N^2,\;
 7N+12(B/\kappa)^2+12kB/\kappa
 \right\rbrace .
-\tag{27}
 ```
 
 Write $`b=B/\kappa`$. For every $`b\ge0`$ and $`N\ge1`$, the inequality $`b\le(N+b^2)/2`$ gives
@@ -351,6 +378,8 @@ x_r(t)=\mathrm{Tr}[C\rho_r(t)],\qquad
 
 Between interventions, branchwise (18) gives
 
+**Equation (28).**
+
 ```math
 \begin{aligned}
 \dot{\bar x}
@@ -360,7 +389,6 @@ Between interventions, branchwise (18) gives
 &\le-2\kappa\left(\bar x-\frac{3N}{4}\right)
 +2\sqrt3 B\sqrt{\bar x}+3kB.
 \end{aligned}
-\tag{28}
 ```
 
 The last inequality uses the hard branchwise cap and the concavity of the square root.
@@ -375,16 +403,19 @@ The final retained-record state is
 
 Because the phase acts only afterward, the probabilities $`p_r`$ are independent of $`\theta`$. The block-diagonal QFI formula gives
 
+**Equation (29).**
+
 ```math
 F_Q(\omega_{RSA},I_R\otimes G)
 =\sum_rp_rF_Q(\rho_r,G)
 \le4\bar x.
-\tag{29}
 ```
 
 Every summand also satisfies (25), so the full minimum bound of Theorem 1 applies. Tracing out the record or any protected subsystem is parameter-independent processing and cannot increase QFI.
 
 For an accepted set $`E`$ with $`p_{\mathrm{acc}}=\sum_{r\in E}p_r>0`$, retain the accepted record if desired. Then
+
+**Equation (30).**
 
 ```math
 \begin{aligned}
@@ -392,7 +423,6 @@ p_{\mathrm{acc}}F_Q(\omega_{\mathrm{acc}},I_R\otimes G)
 &=\sum_{r\in E}p_rF_Q(\rho_r,G)\\
 &\le\sum_rp_rF_Q(\rho_r,G).
 \end{aligned}
-\tag{30}
 ```
 
 Equations (21), (25) and (29) prove the heralding-yield statement (17) of the model. A high conditional QFI on a rare branch is therefore consistent with the converse.
@@ -405,9 +435,10 @@ The proof averages over all preparation outcomes at one prescribed time. It does
 
 A concrete scope check illustrates the issue. Consider preparation with $`B=0`$ and free measurements of the total-spin sector every fixed interval $`\Delta>0`$. For one interval of independent depolarization, write $`\eta=e^{-\kappa\Delta}`$. The tensor-product noise channel contains the complete replacement channel $`\rho_S\mapsto I_S/2^N`$ with probability $`(1-\eta)^N`$. Therefore the conditional probability of observing the maximal-spin sector at the next measurement is at least
 
+**Equation (31).**
+
 ```math
 q_N=(1-\eta)^N\frac{N+1}{2^N}>0,
-\tag{31}
 ```
 
 irrespective of the previous sensor state. The sector projector has rank $`N+1`$. Repeating indefinitely eventually gives this outcome with probability one; the expected number of attempts is at most $`1/q_N`$. At that random success time, an ideal free reset within the measured maximal-spin sector can prepare a GHZ state, since the entire sector has the same Casimir eigenvalue.
@@ -418,10 +449,11 @@ This produces $`N^2`$ terminal QFI in a random-time task while paying a possibly
 
 If the initial contribution has decayed as in (26), attaining $`F_Q\ge cN^2`$ for a fixed $`c>0`$ implies, from (27),
 
+**Equation (32).**
+
 ```math
 12(B/\kappa)^2+12kB/\kappa
 \ge cN^2-7N.
-\tag{32}
 ```
 
 For fixed $`k`$ and sufficiently large $`N`$, this requires $`B=\Omega_c(\kappa N)`$. The conclusion is independent of how strongly the free sector-preserving generator is driven.
@@ -432,7 +464,7 @@ Define the incident charged load at sensor $`i`$ by
 g_i(t)=
 \sum_{X\ni i}
 \left(
-\|h_{X,t}\|+\sum_\mu\|L_{X\mu,t}\|^2
+\Vert h_{X,t}\Vert +\sum_\mu\Vert L_{X\mu,t}\Vert ^2
 \right).
 ```
 

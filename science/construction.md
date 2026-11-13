@@ -57,10 +57,11 @@ The operator $`P`$ is a global $`\pi`$ rotation up to a known phase, so $`[P,C]=
 
 Let $`\sigma_{p,m}=U_{\rm cat}\rho_{p,m}U_{\rm cat}^\dagger`$. Write $`K`$ for the sum of $`m`$ independent signs of mean $`p`$, and set $`a=\mathrm{atanh}p`$. Then
 
+**Equation (1).**
+
 ```math
 F_{p,m}:=F_Q(\sigma_{p,m},S_z)
 =\mathbb E\!\left[(K^2+N-m)\tanh^2(aK)\right].
-\tag{1}
 ```
 
 Here $`F_Q(\rho,G)`$ denotes the quantum Fisher information of $`e^{-i\theta G}\rho e^{i\theta G}`$.
@@ -102,10 +103,11 @@ gives $`F_{p,m}=4\mathbb E[g_s^2\tanh^2(aK)]`$. The unpumped signs have conditio
 
 For $`0\lt p\le1/2`$ and $`m\ge1`$,
 
+**Equation (2).**
+
 ```math
 p^4(N+m^2)\le F_{p,m}
 \le N+p^2m(m-1).
-\tag{2}
 ```
 
 For the upper bound, use $`\tanh^2\le1`$ and
@@ -136,10 +138,11 @@ F_{p,m}
 
 At the limiting pump polarization $`p=1/2`$, the first inequality is $`(N+m^2)/16`$. At finite $`s\ge\kappa^{-1}`$ it remains valid with the fixed constant $`p_*^4`$. Since $`\lfloor b\rfloor\ge b/2`$ for $`b\ge1`$,
 
+**Equation (3).**
+
 ```math
 F_{p,m}\ge\frac{p_*^4}{4}(N+b^2),
 \qquad 1\le b\le N.
-\tag{3}
 ```
 
 Together with the converse and the universal bound $`F_Q\le N^2`$, this establishes the order of the intermediate repair frontier. If $`B\ge\kappa N`$, one can keep $`m=N`$ and obtain a constant fraction of $`N^2`$ with the same construction.
@@ -160,10 +163,11 @@ H_{\rm pulse}=\Omega P,
 
 The phase-independent depolarization continues. If $`\rho_{\rm out}`$ is the actual output and $`\sigma_{p,m}`$ the ideal cat output from the same input, a channel hybrid/Duhamel bound gives
 
+**Equation (4).**
+
 ```math
-\delta:=\frac12\|\rho_{\rm out}-\sigma_{p,m}\|_1
+\delta:=\frac12\Vert \rho_{\rm out}-\sigma_{p,m}\Vert _1
 \le\kappa N\tau.
-\tag{4}
 ```
 
 For this estimate, write the noise as $`\kappa\sum_i(\mathcal T_i-\mathrm{id})`$, with $`\mathcal T_i`$ replacing spin $`i`$ by $`I/2`$. Each summand has diamond norm at most $`2\kappa`$. Unitary interaction pictures and the remaining channels are norm contractions. Equation (4) is a sufficient error estimate, not an optimal pulse-noise law.
@@ -174,7 +178,7 @@ The following fixed-measurement argument avoids assuming uniform continuity of Q
 2|g_s|\,|\tanh(aK)|\le N.
 ```
 
-Thus $`\|L\|\le N`$, $`\mathrm{Tr}(\sigma_{p,m}L^2)=F_{p,m}`$, and the derivative of its mean at $`\theta=0`$ is $`F_{p,m}`$. Since $`\|S_z\|=N/2`$, trace-distance duality gives for the actual probe
+Thus $`\Vert L\Vert \le N`$, $`\mathrm{Tr}(\sigma_{p,m}L^2)=F_{p,m}`$, and the derivative of its mean at $`\theta=0`$ is $`F_{p,m}`$. Since $`\Vert S_z\Vert =N/2`$, trace-distance duality gives for the actual probe
 
 ```math
 \left|\left.\partial_\theta\langle L\rangle\right|_0-F_{p,m}\right|
@@ -186,27 +190,30 @@ Thus $`\|L\|\le N`$, $`\mathrm{Tr}(\sigma_{p,m}L^2)=F_{p,m}`$, and the derivativ
 
 The classical Fisher information of the fixed projective measurement of $`L`$ is at least the squared derivative of its mean divided by its variance. Hence
 
+**Equation (5).**
+
 ```math
 F_Q(\rho_{\rm out},S_z)
 \ge\frac{(F_{p,m}-2\delta N^2)_+^2}
            {F_{p,m}+2\delta N^2}.
-\tag{5}
 ```
 
 In particular, $`\delta\le F_{p,m}/(8N^2)`$ implies
 
+**Equation (6).**
+
 ```math
 F_Q(\rho_{\rm out},S_z)\ge\frac9{20}F_{p,m}.
-\tag{6}
 ```
 
 It therefore suffices to choose
+
+**Equation (7).**
 
 ```math
 \tau\le\frac{p_*^4(N+m^2)}{8\kappa N^3},
 \qquad
 \Omega\ge\frac{2\pi\kappa N^3}{p_*^4(N+m^2)}.
-\tag{7}
 ```
 
 This is a conservative polynomial strength bound. It is not claimed optimal or affordable on a specified platform. The pulse is an $`N`$-body Casimir-preserving Hamiltonian; its operator norm is $`\Omega`$. A synthesis using a different collective interaction has its own strength, duration and gate costs.
@@ -253,10 +260,10 @@ Let $`R=\mathrm{id}-\Pi`$. Since $`\Pi^2=\Pi`$,
 \frac{d}{dt}R\rho=-\Gamma R\rho+R\mathcal D_\kappa\rho.
 ```
 
-For Hermitian inputs, $`\Pi`$ contracts trace norm and $`\|\mathcal D_\kappa\rho\|_1\le2\kappa N`$. Variation of constants therefore yields
+For Hermitian inputs, $`\Pi`$ contracts trace norm and $`\Vert \mathcal D_\kappa\rho\Vert _1\le2\kappa N`$. Variation of constants therefore yields
 
 ```math
-\frac12\|\rho(t)-\sigma(t)\|_1
+\frac12\Vert \rho(t)-\sigma(t)\Vert _1
 \le e^{-\Gamma t}+\frac{2\kappa N}{\Gamma}.
 ```
 
@@ -270,11 +277,12 @@ These global spin-sector resets spend no charged symmetry-breaking repair. Their
 
 Combining this baseline for $`0\le b\lt 1`$, the pumped construction for $`1\le b\le N`$, and $`m=N`$ for $`b>N`$, gives a single uniform constructive consequence: at every prescribed $`T\ge\kappa^{-1}\log(N+2)`$ there is an allowed preparation from $`I/2^N`$ satisfying
 
+**Equation (8).**
+
 ```math
 F_Q(\rho(T),S_z)
 \ge c\min\lbrace N^2,N+b^2\rbrace ,
 \qquad c=\frac{9p_*^4}{80}>0.
-\tag{8}
 ```
 
 The constant is conservative and independent of $`N`$, $`B`$, $`\kappa`$ and $`T`$. At small $`B`$ it uses the supplied global reset controls; it is not a claim that local pumping alone attains an order-$`N`$ floor as its rate tends to zero.

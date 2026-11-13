@@ -9,8 +9,8 @@ The theorem prices microscopic operations that change total-spin sectors while a
 For the supplied local decomposition of the symmetry-breaking generator, the pointwise budget is
 
 ```math
-B(t)=\sum_X|X|\left(\|h_X(t)\|+
-                  \sum_\mu\|L_{X\mu}(t)\|^2\right)\le B,
+B(t)=\sum_X|X|\left(\Vert h_X(t)\Vert +
+                  \sum_\mu\Vert L_{X\mu}(t)\Vert ^2\right)\le B,
 \qquad |X|\le k.
 ```
 

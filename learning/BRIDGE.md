@@ -142,7 +142,7 @@ Also $`G`$ has spectral range $`N`$, including on the joint sensor–auxiliary s
 
 ## 6. What local repair must pay
 
-A charged term touches a set $`X`$ of at most $`k`$ physical sensors. Its support-weighted contribution is $`|X|\|h_X\|`$ for a Hamiltonian or $`|X|\|L_X\|^2`$ for a jump. Their sum is bounded by $`B`$ at every instant. The squared norm appears because a dissipator is quadratic in its jump amplitude. For example, $`\sqrt\kappa|0\rangle\langle1|`$ on one spin costs $`\kappa`$.
+A charged term touches a set $`X`$ of at most $`k`$ physical sensors. Its support-weighted contribution is $`|X|\Vert h_X\Vert `$ for a Hamiltonian or $`|X|\Vert L_X\Vert ^2`$ for a jump. Their sum is bounded by $`B`$ at every instant. The squared norm appears because a dissipator is quadratic in its jump amplitude. For example, $`\sqrt\kappa|0\rangle\langle1|`$ on one spin costs $`\kappa`$.
 
 The book's generator framework does not itself provide the needed repair inequality. The project adds a local commutator estimate and the dissipative product identity,
 
@@ -152,7 +152,7 @@ The book's generator framework does not itself provide the needed repair inequal
 +[S_a,L]^\dagger[S_a,L].
 ```
 
-Because a term touching $`|X|`$ sensors obeys $`\|[S_a,L_X]\|\le|X|\|L_X\|`$, Cauchy–Schwarz bounds the complete drift by
+Because a term touching $`|X|`$ sensors obeys $`\Vert [S_a,L_X]\Vert \le|X|\Vert L_X\Vert `$, Cauchy–Schwarz bounds the complete drift by
 
 ```math
 \dot x\le-2\kappa\left(x-\frac{3N}{4}\right)

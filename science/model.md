@@ -15,7 +15,7 @@ S_a=\frac12\sum_{i=1}^N\sigma_i^a,\qquad
 C=S_x^2+S_y^2+S_z^2,\qquad a\in\lbrace x,y,z\rbrace .
 ```
 
-Identity operators on other registers are implicit. We use $`\hbar=1`$, operator norm $`\|\cdot\|`$, and
+Identity operators on other registers are implicit. We use $`\hbar=1`$, operator norm $`\Vert \cdot\Vert `$, and
 
 ```math
 \mathcal D[L](\rho)
@@ -24,11 +24,12 @@ Identity operators on other registers are implicit. We use $`\hbar=1`$, operator
 
 The unavoidable preparation noise is independent isotropic depolarization,
 
+**Equation (1).**
+
 ```math
 \mathcal N_\kappa
 =\frac{\kappa}{4}\sum_{i=1}^N\sum_{a=x,y,z}\mathcal D[\sigma_i^a],
 \qquad \kappa>0.
-\tag{1}
 ```
 
 This normalization makes each single-qubit Bloch component decay as $`e^{-\kappa t}`$. The noise acts on every sensor throughout preparation. It is neither collective depolarization nor a terminal noise layer.
@@ -39,11 +40,12 @@ A finite-dimensional protected register $`A`$ may contain ancillas or a controll
 
 During preparation, the joint state has a piecewise continuous, finite-dimensional Lindblad evolution
 
+**Equation (2).**
+
 ```math
 \dot\rho
 =(\mathcal N_\kappa\otimes\mathrm{id}_A)(\rho)
 +\mathcal K_t(\rho)+\mathcal R_t(\rho).
-\tag{2}
 ```
 
 Each finite preparation interval has a well-defined propagator. The coefficients may depend on $`N`$ and on the prescribed readout time.
@@ -52,18 +54,20 @@ Each finite preparation interval has a well-defined propagator. The coefficients
 
 The supplied control generator is
 
+**Equation (3).**
+
 ```math
 \mathcal K_t(\rho)
 =-i[H_{0,t},\rho]+\sum_\nu\mathcal D[J_{\nu,t}](\rho),
-\tag{3}
 ```
 
 where every individual term satisfies
 
+**Equation (4).**
+
 ```math
 [H_{0,t},C\otimes I_A]=0,\qquad
 [J_{\nu,t},C\otimes I_A]=0.
-\tag{4}
 ```
 
 Their strengths, nonlinearities, number of terms and joint sensor–ancilla structure are unrestricted within a well-defined finite protocol. Ancilla-only operations are included.
@@ -76,26 +80,28 @@ Finite instantaneous sector-preserving channels are also allowed as ideal suppli
 
 The additional controls have a specified decomposition
 
+**Equation (5).**
+
 ```math
 \mathcal R_t(\rho)
 =-i\left[\sum_X h_{X,t},\rho\right]
 +\sum_{X,\mu}\mathcal D[L_{X\mu,t}](\rho).
-\tag{5}
 ```
 
 Here $`X`$ is a nonempty subset of physical sensors, $`r_X=|X|\le k`$, and every $`h_X`$ or $`L_{X\mu}`$ acts trivially on sensors outside $`X`$. It may act jointly on the protected register $`A`$. Spatial adjacency is not assumed: $`k`$ bounds the number of sensors touched by one charged term.
 
 The instantaneous control budget is
 
+**Equation (6).**
+
 ```math
 \begin{aligned}
 b(t)
-&=\sum_X r_X\|h_{X,t}\|
-+\sum_{X,\mu}r_X\|L_{X\mu,t}\|^2,\\
+&=\sum_X r_X\Vert h_{X,t}\Vert 
++\sum_{X,\mu}r_X\Vert L_{X\mu,t}\Vert ^2,\\
 b(t)&\le B
 \qquad\text{for every preparation time.}
 \end{aligned}
-\tag{6}
 ```
 
 The jump amplitudes include their rates; for example, $`\sqrt{\Gamma}\,\sigma_i^+`$ costs $`\Gamma`$. Hamiltonian norms and squared jump norms both have units of inverse time. The locality $`k`$ is fixed when discussing asymptotic order in $`N`$.
@@ -108,11 +114,12 @@ A reset of $`A`$ alone is free in this budget. A coupling that transfers purity 
 
 The initial state and every preparation choice are independent of the unknown phase. The readout time $`T`$ is prescribed and deterministic. After preparation, imprint
 
+**Equation (7).**
+
 ```math
 U_\theta=e^{-i\theta G},\qquad
 G=\mathbf n\cdot\mathbf S\otimes I_A,\qquad
-\|\mathbf n\|_2=1.
-\tag{7}
+\Vert \mathbf n\Vert _2=1.
 ```
 
 The sensitivity is the symmetric-logarithmic-derivative quantum Fisher information
@@ -127,11 +134,12 @@ The homogeneous generator in (7) is load-bearing. A bound using the global Casim
 
 Define the initial second moment
 
+**Equation (8).**
+
 ```math
 x_0=\mathrm{Tr}[C\rho_S(0)],
 \qquad
 0\le x_0\le\frac{N(N+2)}4.
-\tag{8}
 ```
 
 This quantity records the initial sensor resource even when the initial state or the protected register has been supplied without a preparation charge.
@@ -139,6 +147,8 @@ This quantity records the initial sensor resource even when the initial state or
 ## 4. Main finite-time converse
 
 **Theorem 1.** Every protocol in Sections 1–3 obeys
+
+**Equation (9).**
 
 ```math
 \begin{aligned}
@@ -150,25 +160,26 @@ F_Q(\rho_{SA}(T),G)
 +12k\frac B\kappa
 \right]\Bigg\rbrace .
 \end{aligned}
-\tag{9}
 ```
 
 The bound is uniform over the free control strengths, the finite protected register, and the allowed local repair terms. It does not require a unique stationary state or convergence to one.
 
 With no repair, the sharper exact moment identity is
 
+**Equation (10).**
+
 ```math
 \mathrm{Tr}[C\rho_S(T)]
 =\frac{3N}{4}
 +\left(x_0-\frac{3N}{4}\right)e^{-2\kappa T}.
-\tag{10}
 ```
 
 Consequently every stationary joint state without repair satisfies
 
+**Equation (11).**
+
 ```math
 F_Q(\rho_{SA,*},G)\le \min\lbrace N^2,3N\rbrace .
-\tag{11}
 ```
 
 For general $`B`$, any stationary state obeys (9) with the initial exponential term removed. These stationary upper bounds do not supply a stationary attaining construction.
@@ -179,12 +190,15 @@ The [proof](converse.md) establishes the operator noise identity, a local repair
 
 The finite-time initial-resource term in (9) becomes at most $`N`$ whenever
 
+**Equation (12).**
+
 ```math
 T\ge \frac{\log(N+2)}{\kappa}.
-\tag{12}
 ```
 
 Thus, for every such prescribed readout time,
+
+**Equation (13).**
 
 ```math
 F_Q\le
@@ -193,17 +207,19 @@ N^2,\;
 7N+12\left(\frac B\kappa\right)^2
 +12k\frac B\kappa
 \right\rbrace .
-\tag{13}
 ```
 
 For any fixed $`k\ge1`$ and every
 
+**Equation (14).**
+
 ```math
 B\ge0,
-\tag{14}
 ```
 
 the optimal order in the supplied-control model is
+
+**Equation (15).**
 
 ```math
 \boxed{
@@ -214,7 +230,6 @@ N+\left(\frac B\kappa\right)^2
 \right\rbrace 
 \right).
 }
-\tag{15}
 ```
 
 Here the optimum is over the admissible preparation protocols, initial states and finite protected registers for any fixed prescribed unit signal axis. The upper bound permits arbitrary initial sensor states and protected finite ancillas. The [lower construction](construction.md) starts from maximally mixed sensors and uses the same hard repair cap. For $`\kappa\le B\le\kappa N`$, it pumps $`\lfloor B/\kappa\rfloor`$ selected individual spins, then applies a supplied sector-preserving collective gate at the deterministic output time. For $`B>\kappa N`$, pumping all sensors saturates the quadratic order. For $`B\lt \kappa`$, a supplied global spin-sector reset generator attains linear QFI with no charged repair; its highly structured jumps have an explicitly growing supplied rate. Constants are uniform in $`N`$, $`B`$ and $`\kappa`$ under (12), with $`k`$ fixed; $`k`$ enters the converse constants. Whenever charged repair is used, the construction needs only one-sensor repair terms.
@@ -223,10 +238,11 @@ Equation (15) concerns endpoint probe preparation with the stated collective ope
 
 A consequence of the upper bound is architectural: to maintain a fixed positive fraction of $`N^2`$ endpoint QFI after the initial resource has decayed, one needs
 
+**Equation (16).**
+
 ```math
 B=\Omega(\kappa N)
 \qquad(N\to\infty,\ k\text{ fixed}).
-\tag{16}
 ```
 
 For example, if only $`r`$ physical sensors participate in charged control and the total incident Hamiltonian/jump budget at each such sensor is at most $`\Gamma`$, then $`B\le r\Gamma`$. Equation (16) gives $`r\Gamma=\Omega(\kappa N)`$. Increasing only the strength of the free sector-preserving controls cannot replace that local budget.
@@ -239,11 +255,12 @@ The upper bounds then hold for the joint classical–quantum output, with $`x_0`
 
 If a heralding event at the prescribed time has probability $`p_{\mathrm{acc}}`$, its accepted output satisfies the yield bound
 
+**Equation (17).**
+
 ```math
 p_{\mathrm{acc}}\,
 F_Q(\rho_{\mathrm{acc}},G)
 \le \text{the right-hand side of (9)}.
-\tag{17}
 ```
 
 The accepted state may retain its preparation record. Discarding that record cannot increase its QFI.
