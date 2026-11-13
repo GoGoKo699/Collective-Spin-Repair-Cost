@@ -59,3 +59,9 @@ stated sufficient norm. Passing this check does not make that Hamiltonian
 cheap to synthesize. The phase is introduced after preparation; these checks
 do not establish precision during noisy frequency encoding or Fisher
 information for an entire measurement transcript.
+
+## Hosted mathematical display
+
+The read-only [hosted-math workflow](../.github/workflows/hosted-math.yml) first probes the README, then compares every tracked Markdown page at its exact proposed commit against GitHub's actual rendered mathematics at 1440px and 760px widths. It uses the [collector](hosted_math/capture_hosted_math.cjs), [source checker](hosted_math/check_rendered_math.py), and [representative probe](hosted_math/probe_hosted_math.cjs) with Playwright 1.56.1 and MathJax 3.2.1.
+
+The generated report binds source hashes, expression counts, structural comparisons and actual captures. A passing automated report still requires visual inspection of the screenshots; neither check certifies the scientific proof or future renderer behavior. The job has only `contents: read`, does not persist checkout credentials, and runs only for same-repository pull requests.

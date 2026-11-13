@@ -14,3 +14,11 @@ This repository studies the local symmetry-changing repair needed to prepare col
 - Reproduction and actual finite checks: verification/README.md, verification/verify.py and verification/finite_checks.json.
 
 The headline order uses a prescribed time T >= log(N+2)/kappa, fixed repair locality, and arbitrarily strong supplied controls whose individual Hamiltonians/jumps preserve the SENSOR Casimir. Parameter encoding follows preparation. Average repair budgets, unrestricted random stopping, generic local noise, differential generators and stationary quadratic-QFI attainment are different claims. Do not infer laboratory/runtime advantage or independent proof certification from the repository's checks.
+
+## Learning routes
+
+- Start and selected sole educational anchor: learning/README.md.
+- Breuer–Petruccione (2002), relevant Chapter 2 and Chapter 3 sections, notation translations, missing project-specific steps and worked examples: learning/BRIDGE.md.
+- Exactly 30 project-defined understanding targets, dependencies and proof pointers: learning/MILESTONES.md.
+
+The common learning material is independent of any learner’s assessment history. Research citations identify imported results; they do not add educational anchors.
