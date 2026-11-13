@@ -49,7 +49,7 @@ Spin-sector leakage and mixed-state metrological amplification are established i
 
 ## Reproduce the checks
 
-With Python 3.10 or later:
+With Python 3.12:
 
 ```bash
 python -m pip install -r verification/requirements.txt
