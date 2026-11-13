@@ -65,7 +65,7 @@ $$
 
 Here $F_Q(\rho,G)$ denotes the quantum Fisher information of $e^{-i\theta G}\rho e^{i\theta G}$.
 
-To verify (1), label a computational-basis string by signs $s_i\in\{\pm1\}$. Its input eigenvalue and magnetization are
+To verify (1), label a computational-basis string by signs $s_i\in\lbrace \pm1\rbrace $. Its input eigenvalue and magnetization are
 
 $$
 \lambda_s=2^{-N}\prod_{i\le m}(1+ps_i),
@@ -272,7 +272,7 @@ Combining this baseline for $0\le b<1$, the pumped construction for $1\le b\le N
 
 $$
 F_Q(\rho(T),S_z)
-\ge c\min\{N^2,N+b^2\},
+\ge c\min\lbrace N^2,N+b^2\rbrace ,
 \qquad c=\frac{9p_*^4}{80}>0.
 \tag{8}
 $$

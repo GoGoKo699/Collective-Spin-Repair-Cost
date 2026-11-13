@@ -43,7 +43,7 @@ does not attempt to enumerate every calculation.
 ### M03 — Rates in a local Lindblad generator
 
 - **Central question:** What does the preparation noise rate $\kappa$ mean operationally?
-- **Understanding target:** Read the Hamiltonian and dissipative parts of a finite-dimensional master equation, including the convention $\mathcal D[L](\rho)=L\rho L^\dagger-\{L^\dagger L,\rho\}/2$. Explain why jump amplitudes contain square roots of rates. Under the project's independent isotropic depolarization, each single-spin Bloch component decays at rate $\kappa$.
+- **Understanding target:** Read the Hamiltonian and dissipative parts of a finite-dimensional master equation, including the convention $\mathcal D[L](\rho)=L\rho L^\dagger-\lbrace L^\dagger L,\rho\rbrace /2$. Explain why jump amplitudes contain square roots of rates. Under the project's independent isotropic depolarization, each single-spin Bloch component decays at rate $\kappa$.
 - **Dependencies and story role:** Uses M01–M02. Give the local noise a calibrated meaning before comparing it with repair strength.
 - **Conceptual connection:** A factor in the generator changes both the decay time and the dimensionless repair ratio $B/\kappa$.
 - **Source pointers:** Anchor Chapter 3, Sections 3.2.1–3.2.3; [Model](../science/model.md), Section 1; [Converse](../science/converse.md), Section 1.
@@ -245,7 +245,7 @@ does not attempt to enumerate every calculation.
 ### M28 — The complete repair frontier and two architectural scales
 
 - **Central question:** What changes as repair passes the scales $\kappa\sqrt N$ and $\kappa N$?
-- **Understanding target:** Combine the universal upper bound, finite pumped-spin construction, saturation at $N^2$ and zero-budget floor into $\Theta_k(\min\{N^2,N+(B/\kappa)^2\})$. Interpret increasing gain over linear QFI and a fixed fraction of quadratic QFI separately. Translate an incident per-sensor cap into the addressed-strength condition $r\Gamma=\Omega(\kappa N)$.
+- **Understanding target:** Combine the universal upper bound, finite pumped-spin construction, saturation at $N^2$ and zero-budget floor into $\Theta_k(\min\lbrace N^2,N+(B/\kappa)^2\rbrace )$. Interpret increasing gain over linear QFI and a fixed fraction of quadratic QFI separately. Translate an incident per-sensor cap into the addressed-strength condition $r\Gamma=\Omega(\kappa N)$.
 - **Dependencies and story role:** Integrates M18–M19 and M24–M27. Assemble both sides of the resource law across all budget ranges.
 - **Conceptual connection:** Stronger supplied sector-preserving processing does not replace the microscopic throughput needed to replenish the physical moment.
 - **Source pointers:** Anchor foundations through [BRIDGE](BRIDGE.md); [Model](../science/model.md), Section 5; [Converse](../science/converse.md), Section 8; [Interpretation](../science/interpretation.md), repair-scale table.

@@ -12,14 +12,14 @@ There are $N\ge 1$ physical sensor qubits, with Hilbert space $\mathcal H_S=(\ma
 
 $$
 S_a=\frac12\sum_{i=1}^N\sigma_i^a,\qquad
-C=S_x^2+S_y^2+S_z^2,\qquad a\in\{x,y,z\}.
+C=S_x^2+S_y^2+S_z^2,\qquad a\in\lbrace x,y,z\rbrace .
 $$
 
 Identity operators on other registers are implicit. We use $\hbar=1$, operator norm $\|\cdot\|$, and
 
 $$
 \mathcal D[L](\rho)
-=L\rho L^\dagger-\frac12\{L^\dagger L,\rho\}.
+=L\rho L^\dagger-\frac12\lbrace L^\dagger L,\rho\rbrace .
 $$
 
 The unavoidable preparation noise is independent isotropic depolarization,
@@ -143,12 +143,12 @@ This quantity records the initial sensor resource even when the initial state or
 $$
 \begin{aligned}
 F_Q(\rho_{SA}(T),G)
-\le \min\Bigg\{N^2,\;&4e^{-\kappa T}x_0\\
+\le \min\Bigg\lbrace N^2,\;&4e^{-\kappa T}x_0\\
 &+(1-e^{-\kappa T})
 \left[
 6N+12\left(\frac B\kappa\right)^2
 +12k\frac B\kappa
-\right]\Bigg\}.
+\right]\Bigg\rbrace .
 \end{aligned}
 \tag{9}
 $$
@@ -167,7 +167,7 @@ $$
 Consequently every stationary joint state without repair satisfies
 
 $$
-F_Q(\rho_{SA,*},G)\le \min\{N^2,3N\}.
+F_Q(\rho_{SA,*},G)\le \min\lbrace N^2,3N\rbrace .
 \tag{11}
 $$
 
@@ -188,11 +188,11 @@ Thus, for every such prescribed readout time,
 
 $$
 F_Q\le
-\min\left\{
+\min\left\lbrace 
 N^2,\;
 7N+12\left(\frac B\kappa\right)^2
 +12k\frac B\kappa
-\right\}.
+\right\rbrace .
 \tag{13}
 $$
 
@@ -209,9 +209,9 @@ $$
 \boxed{
 F_{N,k}^{\mathrm{opt}}(B,\kappa,T)
 =\Theta_k\!\left(
-\min\left\{N^2,\;
+\min\left\lbrace N^2,\;
 N+\left(\frac B\kappa\right)^2
-\right\}
+\right\rbrace 
 \right).
 }
 \tag{15}

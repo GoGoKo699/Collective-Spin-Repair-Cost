@@ -18,7 +18,7 @@ $$
 \boxed{
 F_Q^{\rm opt}(N,B,T)
 =\Theta_k\!\left(
-\min\left\{N^2,\;N+\left(\frac B\kappa\right)^2\right\}
+\min\left\lbrace N^2,\;N+\left(\frac B\kappa\right)^2\right\rbrace 
 \right).
 }
 $$

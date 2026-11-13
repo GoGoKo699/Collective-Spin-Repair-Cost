@@ -20,7 +20,7 @@ where this project uses
 
 $$
 \mathcal D[L](\rho)
-=L\rho L^\dagger-\frac12\{L^\dagger L,\rho\}.
+=L\rho L^\dagger-\frac12\lbrace L^\dagger L,\rho\rbrace .
 $$
 
 The Hamiltonian gives coherent evolution. Each dissipator gives an allowed irreversible contribution. For a time-independent generator, the propagators form a semigroup. The project also permits piecewise continuous time-dependent controls; it retains the same instantaneous generator form without assuming one time-independent semigroup for the entire preparation.
@@ -60,7 +60,7 @@ $$
 \mathcal L^\dagger(O)
 =i[H,O]+\sum_\mu
 \left(L_\mu^\dagger O L_\mu
--\frac12\{L_\mu^\dagger L_\mu,O\}\right).
+-\frac12\lbrace L_\mu^\dagger L_\mu,O\rbrace \right).
 $$
 
 This is the useful link to the book's adjoint master equation: instead of solving for every matrix entry of $\rho$, the proof follows one observable whose evolution closes.
@@ -148,7 +148,7 @@ The book's generator framework does not itself provide the needed repair inequal
 
 $$
 \mathcal D[L]^\dagger(S_a^2)
-=\{S_a,\mathcal D[L]^\dagger(S_a)\}
+=\lbrace S_a,\mathcal D[L]^\dagger(S_a)\rbrace 
 +[S_a,L]^\dagger[S_a,L].
 $$
 
@@ -163,7 +163,7 @@ The repair term grows as $B\sqrt x$. Balancing it against the loss $\kappa x$ pr
 
 $$
 F_Q^{\mathrm{opt}}
-=\Theta_k\!\left(\min\{N^2,N+(B/\kappa)^2\}\right).
+=\Theta_k\!\left(\min\lbrace N^2,N+(B/\kappa)^2\rbrace \right).
 $$
 
 The [converse](../science/converse.md) supplies the proof and record-assisted extension. The hard budget, fixed locality order, homogeneous signal and deterministic output time are part of this statement.

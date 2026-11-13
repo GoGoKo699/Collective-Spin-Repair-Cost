@@ -23,7 +23,7 @@ After the stated initial-resource decay, the supplied-control optimum has order
 
 $$
 F_Q^{\rm opt}
-=\Theta_k\!\left(\min\{N^2,\;N+(B/\kappa)^2\}\right).
+=\Theta_k\!\left(\min\lbrace N^2,\;N+(B/\kappa)^2\rbrace \right).
 $$
 
 The locality order $k$ is fixed, the output time is prescribed, and the budget is capped at every instant. The exact hypotheses and constants are in the [model](model.md).

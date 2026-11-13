@@ -45,7 +45,7 @@ If $[H_0,C]=0$ and $[J,C]=0$, then
 $$
 i[H_0,C]=0,\qquad
 \mathcal D[J]^\dagger(C)
-=J^\dagger C J-\frac12\{J^\dagger J,C\}=0.
+=J^\dagger C J-\frac12\lbrace J^\dagger J,C\rbrace =0.
 \tag{4}
 $$
 
@@ -100,7 +100,7 @@ For a Hamiltonian term, the derivation rule gives
 
 $$
 i[h_X,S_a^2]
-=\{S_a,i[h_X,S_a]\},
+=\lbrace S_a,i[h_X,S_a]\rbrace ,
 \qquad
 \|i[h_X,S_a]\|\le q\|h_X\|.
 \tag{8}
@@ -130,7 +130,7 @@ The dissipative product identity is
 $$
 \begin{aligned}
 \mathcal D[L_X]^\dagger(S_a^2)
-={}&\{S_a,\mathcal D[L_X]^\dagger(S_a)\}\\
+={}&\lbrace S_a,\mathcal D[L_X]^\dagger(S_a)\rbrace \\
 &+[S_a,L_X]^\dagger[S_a,L_X].
 \end{aligned}
 \tag{11}
@@ -169,7 +169,7 @@ Summing (8) and (11) over all terms gives
 
 $$
 \mathcal R^\dagger(C)
-=\sum_a\{S_a,A_a\}
+=\sum_a\lbrace S_a,A_a\rbrace 
 +\sum_{X,\mu,a}
 [S_a,L_{X\mu}]^\dagger[S_a,L_{X\mu}].
 \tag{14}
@@ -192,7 +192,7 @@ Therefore
 
 $$
 \begin{aligned}
-\sum_a\langle\{S_a,A_a\}\rangle
+\sum_a\langle\lbrace S_a,A_a\rbrace \rangle
 &\le 2b(t)\sum_a\sqrt{\langle S_a^2\rangle}\\
 &\le 2\sqrt3\,b(t)\sqrt{x}.
 \end{aligned}
@@ -322,10 +322,10 @@ Using $1-e^{-\kappa T}\le1$ proves the uniform finite-time bound
 
 $$
 F_Q\le
-\min\left\{
+\min\left\lbrace 
 N^2,\;
 7N+12(B/\kappa)^2+12kB/\kappa
-\right\}.
+\right\rbrace .
 \tag{27}
 $$
 
