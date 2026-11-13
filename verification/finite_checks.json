@@ -1,0 +1,149 @@
+{
+  "scope": "Deterministic finite-dimensional numerical checks, not arbitrary-N proofs or a priority certification.",
+  "noise_and_reference": {
+    "noise_identity_N": [
+      1,
+      6
+    ],
+    "density_matrix_auxiliary_cases": 12,
+    "maximum_identity_residual": 1.6792123247455493e-15,
+    "largest_tested_QFI_over_4C": 0.15309355864008203
+  },
+  "repair": {
+    "operator_cases_with_noncontiguous_support_and_auxiliary": 16,
+    "maximum_Leibniz_residual": 1.0542497379662533e-15,
+    "largest_Young_operator_excess_eigenvalue": -7.323155955011557
+  },
+  "cat": {
+    "spectral_vs_binomial_points": 63,
+    "maximum_QFI_residual": 2.4868995751603507e-14,
+    "smallest_F_over_N_plus_m_squared_at_p_half": 0.1249999999999999
+  },
+  "finite_pulse": [
+    {
+      "N": 1,
+      "m": 1,
+      "Omega_over_kappa": 89.92468076528162,
+      "duration_times_kappa": 0.008733955536049866,
+      "total_preparation_time_times_kappa": 1.0986122886681098,
+      "finite_pump_polarization": 0.44346547959732496,
+      "ideal_QFI": 0.19666163159448535,
+      "actual_QFI": 0.1932561932404163,
+      "fixed_ideal_SLD_measurement_FI": 0.19325619324041637,
+      "half_trace_distance": 0.0019281713518166932,
+      "distance_upper_bound": 0.008733955536049866
+    },
+    {
+      "N": 2,
+      "m": 1,
+      "Omega_over_kappa": 479.5982974148353,
+      "duration_times_kappa": 0.0016376166630093498,
+      "total_preparation_time_times_kappa": 1.3862943611198906,
+      "finite_pump_polarization": 0.46864748116365185,
+      "ideal_QFI": 0.4392609232020706,
+      "actual_QFI": 0.43710831130354766,
+      "fixed_ideal_SLD_measurement_FI": 0.43710831130354716,
+      "half_trace_distance": 0.0005876421615672997,
+      "distance_upper_bound": 0.0032752333260186997
+    },
+    {
+      "N": 3,
+      "m": 1,
+      "Omega_over_kappa": 1213.9831903313018,
+      "duration_times_kappa": 0.0006469596693370271,
+      "total_preparation_time_times_kappa": 1.6094379124341003,
+      "finite_pump_polarization": 0.4799741048637306,
+      "ideal_QFI": 0.6911254240192177,
+      "actual_QFI": 0.6893393320589652,
+      "fixed_ideal_SLD_measurement_FI": 0.6893393320589655,
+      "half_trace_distance": 0.000325635927071865,
+      "distance_upper_bound": 0.0019408790080110813
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "Omega_over_kappa": 693.7046801893154,
+      "duration_times_kappa": 0.0011321794213397973,
+      "total_preparation_time_times_kappa": 1.6094379124341003,
+      "finite_pump_polarization": 0.47995466151121446,
+      "ideal_QFI": 1.872274266789054,
+      "actual_QFI": 1.8646050091497977,
+      "fixed_ideal_SLD_measurement_FI": 1.8646050091497957,
+      "half_trace_distance": 0.0006997802517920064,
+      "distance_upper_bound": 0.003396538264019392
+    },
+    {
+      "N": 4,
+      "m": 4,
+      "Omega_over_kappa": 575.5179568978024,
+      "duration_times_kappa": 0.0013646805525077915,
+      "total_preparation_time_times_kappa": 1.791759469228055,
+      "finite_pump_polarization": 0.48607315153886055,
+      "ideal_QFI": 5.839421583487326,
+      "actual_QFI": 5.805736077187653,
+      "fixed_ideal_SLD_measurement_FI": 5.8057360771876505,
+      "half_trace_distance": 0.0013866437422490217,
+      "distance_upper_bound": 0.005458722210031166
+    }
+  ],
+  "zero_repair_stationary_linear_baseline": [
+    {
+      "N": 1,
+      "Gamma_over_kappa": 64,
+      "stationary_C": 0.75,
+      "finite_time_times_kappa": 1.0,
+      "finite_time_QFI": 0.9694674556212861,
+      "finite_time_fixed_SLD_measurement_FI": 0.9694674556212867,
+      "finite_time_half_trace_distance_to_sector_reset": 0.007692307692307221,
+      "ideal_sector_reset_QFI": 0.9999999999999993,
+      "stationary_QFI": 0.9694674556213014,
+      "fixed_ideal_SLD_measurement_FI": 0.9694674556213014,
+      "half_trace_distance_to_sector_reset": 0.007692307692307665
+    },
+    {
+      "N": 2,
+      "Gamma_over_kappa": 256,
+      "stationary_C": 1.5,
+      "finite_time_times_kappa": 1.0,
+      "finite_time_QFI": 2.961320641040957,
+      "finite_time_fixed_SLD_measurement_FI": 2.9613206410409556,
+      "finite_time_half_trace_distance_to_sector_reset": 0.003875968992247819,
+      "ideal_sector_reset_QFI": 3.0000000000000524,
+      "stationary_QFI": 2.9613206410411452,
+      "fixed_ideal_SLD_measurement_FI": 2.961320641041145,
+      "half_trace_distance_to_sector_reset": 0.0038759689922481383
+    },
+    {
+      "N": 3,
+      "Gamma_over_kappa": 576,
+      "stationary_C": 2.25,
+      "finite_time_times_kappa": 1.0,
+      "finite_time_QFI": 4.956726379894141,
+      "finite_time_fixed_SLD_measurement_FI": 4.956696709114747,
+      "finite_time_half_trace_distance_to_sector_reset": 0.0028862227220419973,
+      "ideal_sector_reset_QFI": 5.000000000000194,
+      "stationary_QFI": 4.956726379894956,
+      "fixed_ideal_SLD_measurement_FI": 4.956614580626958,
+      "half_trace_distance_to_sector_reset": 0.002886222722042495
+    },
+    {
+      "N": 4,
+      "Gamma_over_kappa": 1024,
+      "stationary_C": 3.0,
+      "finite_time_times_kappa": 1.0,
+      "finite_time_QFI": 7.202478013437322,
+      "finite_time_fixed_SLD_measurement_FI": 7.202220988580422,
+      "finite_time_half_trace_distance_to_sector_reset": 0.002075326345365611,
+      "ideal_sector_reset_QFI": 7.250000000001098,
+      "stationary_QFI": 7.20247801344061,
+      "fixed_ideal_SLD_measurement_FI": 7.202220392716317,
+      "half_trace_distance_to_sector_reset": 0.0020753263453663893
+    }
+  ],
+  "model_boundary_counterexamples": {
+    "singlet_global_C": 0.0,
+    "singlet_differential_QFI": 4.0,
+    "four_spin_GHZ_one_axis_C_drift": 0.0,
+    "four_spin_GHZ_isotropic_C_drift": -5.999999999999997
+  }
+}
