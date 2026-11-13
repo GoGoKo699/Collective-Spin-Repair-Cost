@@ -5,7 +5,7 @@ This page proves the finite-time converse in [the model](model.md). The proof us
 Throughout, $`S_a`$ and $`C=\sum_a S_a^2`$ act on the physical sensors and are tensored with the identity on every protected register. Write
 
 ```math
-x(t)=\operatorname{Tr}[C\rho_{SA}(t)].
+x(t)=\mathrm{Tr}[C\rho_{SA}(t)].
 ```
 
 ## 1. Exact action of independent depolarization
@@ -179,10 +179,10 @@ For every density operator, the weighted operator Cauchy–Schwarz inequality gi
 
 ```math
 \begin{aligned}
-\left|\operatorname{Tr}(\rho S_a A_a)\right|
+\left|\mathrm{Tr}(\rho S_a A_a)\right|
 &\le
-\sqrt{\operatorname{Tr}(\rho S_a^2)}
-\sqrt{\operatorname{Tr}(\rho A_a^2)}\\
+\sqrt{\mathrm{Tr}(\rho S_a^2)}
+\sqrt{\mathrm{Tr}(\rho A_a^2)}\\
 &\le b(t)\sqrt{\langle S_a^2\rangle}.
 \end{aligned}
 \tag{15}
@@ -285,7 +285,7 @@ F_Q(\rho,G)
 The inequality $`(\lambda_r-\lambda_s)^2\le(\lambda_r+\lambda_s)^2`$, applied after replacing $`G`$ by $`G-\langle G\rangle I`$, gives the standard bound
 
 ```math
-F_Q(\rho,G)\le4\operatorname{Var}_\rho(G).
+F_Q(\rho,G)\le4\mathrm{Var}_\rho(G).
 \tag{23}
 ```
 
@@ -345,7 +345,7 @@ We now consider the stated finite-record extension. Between finitely many prescr
 Write the normalized state on branch $`r`$ as $`\rho_r(t)`$, its probability as $`p_r`$, and
 
 ```math
-x_r(t)=\operatorname{Tr}[C\rho_r(t)],\qquad
+x_r(t)=\mathrm{Tr}[C\rho_r(t)],\qquad
 \bar x(t)=\sum_rp_r x_r(t).
 ```
 

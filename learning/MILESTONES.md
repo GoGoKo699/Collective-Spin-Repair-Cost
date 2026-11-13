@@ -107,7 +107,7 @@ does not attempt to enumerate every calculation.
 ### M11 — Initial resources and a prescribed output time
 
 - **Central question:** Why must the readout deadline accompany a claim about long preparation?
-- **Understanding target:** Recognize $`x_0=\operatorname{Tr}(C\rho(0))`$ as an initially supplied physical resource, potentially of order $`N^2`$. Distinguish an arbitrary finite-time bound, a stationary consequence and a bound uniform after initial resources have decayed. The output time is prescribed; it is not chosen by waiting for a favorable outcome.
+- **Understanding target:** Recognize $`x_0=\mathrm{Tr}(C\rho(0))`$ as an initially supplied physical resource, potentially of order $`N^2`$. Distinguish an arbitrary finite-time bound, a stationary consequence and a bound uniform after initial resources have decayed. The output time is prescribed; it is not chosen by waiting for a favorable outcome.
 - **Dependencies and story role:** Uses M04–M05 and M08–M10. Add the temporal contract that makes different preparation protocols comparable.
 - **Conceptual connection:** The logarithmic-in-$`N`$ horizon will remove an initially quadratic term without assuming a unique steady state.
 - **Source pointers:** Anchor Chapter 3, Sections 3.2.1–3.2.3; [Model](../science/model.md), Sections 3–6; [Resources](../science/resources.md), “Why the time and output conventions matter.”
@@ -173,7 +173,7 @@ does not attempt to enumerate every calculation.
 ### M19 — From spin moment to the homogeneous phase bound
 
 - **Central question:** How does the moment inequality become a sensitivity frontier?
-- **Understanding target:** Join $`F_Q\le4\operatorname{Var}(G)\le4\langle C\rangle`$ with the independent spectral cap $`F_Q\le N^2`$. At $`T\ge\log(N+2)/\kappa`$, explain why the arbitrary initial contribution is at most linear. Keep fixed locality $`k`$, the physical sensor Casimir and the subsequent homogeneous phase in the statement.
+- **Understanding target:** Join $`F_Q\le4\mathrm{Var}(G)\le4\langle C\rangle`$ with the independent spectral cap $`F_Q\le N^2`$. At $`T\ge\log(N+2)/\kappa`$, explain why the arbitrary initial contribution is at most linear. Keep fixed locality $`k`$, the physical sensor Casimir and the subsequent homogeneous phase in the statement.
 - **Dependencies and story role:** Uses M09, M12 and M18. Complete the converse for the actual output quantity.
 - **Conceptual connection:** Protected ancillary assistance changes the state and readout possibilities, while the generator range and moment bound still constrain its QFI.
 - **Source pointers:** Anchor Chapter 2 for composite states; project-supplied argument in [Converse](../science/converse.md), Section 5, and [Model](../science/model.md), Sections 4–5.
@@ -205,7 +205,7 @@ does not attempt to enumerate every calculation.
 ### M23 — Complementary strings and mixed-state QFI
 
 - **Central question:** How do the mixed input eigenvalues determine the cat probe's sensitivity?
-- **Understanding target:** Relate a string's eigenvalue ratio to $`\tanh(\operatorname{atanh}(p)K)`$, where $`K`$ sums the pumped signs. Combine complementary-string matrix elements with the unpumped spins' conditional variance to obtain the exact QFI expectation. Explain why mixed spins still contribute and why both parities of $`N`$ are covered.
+- **Understanding target:** Relate a string's eigenvalue ratio to $`\tanh(\mathrm{atanh}(p)K)`$, where $`K`$ sums the pumped signs. Combine complementary-string matrix elements with the unpumped spins' conditional variance to obtain the exact QFI expectation. Explain why mixed spins still contribute and why both parities of $`N`$ are covered.
 - **Dependencies and story role:** Uses M09 and M21–M22. Establish the quantitative lower-construction quantity before using its scaling.
 - **Conceptual connection:** This calculation uses an inherited mixed-state amplification mechanism; its role here is to match a specifically priced preparation task.
 - **Source pointers:** Anchor Chapter 2 for spectral state descriptions; project derivation in [Construction](../science/construction.md), Section 2; [Related work](../references/RELATED_WORK.md), “Mixed-state amplification.”

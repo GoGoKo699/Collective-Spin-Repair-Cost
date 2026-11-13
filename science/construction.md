@@ -55,7 +55,7 @@ U_{\rm cat}=e^{-i\pi P/4}.
 
 The operator $`P`$ is a global $`\pi`$ rotation up to a known phase, so $`[P,C]=0`$ and $`U_{\rm cat}`$ belongs to the free Casimir-preserving control class. This assertion does not make its many-body implementation inexpensive. Its finite-duration implementation is treated in Section 4.
 
-Let $`\sigma_{p,m}=U_{\rm cat}\rho_{p,m}U_{\rm cat}^\dagger`$. Write $`K`$ for the sum of $`m`$ independent signs of mean $`p`$, and set $`a=\operatorname{atanh}p`$. Then
+Let $`\sigma_{p,m}=U_{\rm cat}\rho_{p,m}U_{\rm cat}^\dagger`$. Write $`K`$ for the sum of $`m`$ independent signs of mean $`p`$, and set $`a=\mathrm{atanh}p`$. Then
 
 ```math
 F_{p,m}:=F_Q(\sigma_{p,m},S_z)
@@ -174,13 +174,13 @@ The following fixed-measurement argument avoids assuming uniform continuity of Q
 2|g_s|\,|\tanh(aK)|\le N.
 ```
 
-Thus $`\|L\|\le N`$, $`\operatorname{Tr}(\sigma_{p,m}L^2)=F_{p,m}`$, and the derivative of its mean at $`\theta=0`$ is $`F_{p,m}`$. Since $`\|S_z\|=N/2`$, trace-distance duality gives for the actual probe
+Thus $`\|L\|\le N`$, $`\mathrm{Tr}(\sigma_{p,m}L^2)=F_{p,m}`$, and the derivative of its mean at $`\theta=0`$ is $`F_{p,m}`$. Since $`\|S_z\|=N/2`$, trace-distance duality gives for the actual probe
 
 ```math
 \left|\left.\partial_\theta\langle L\rangle\right|_0-F_{p,m}\right|
 \le2\delta N^2,
 \qquad
-\operatorname{Var}_{\rho_{\rm out}}L
+\mathrm{Var}_{\rho_{\rm out}}L
 \le F_{p,m}+2\delta N^2.
 ```
 
@@ -238,7 +238,7 @@ extended by zero outside their $`j`$ block. Every Kraus operator commutes with $
 
 is an allowed free generator. It is even permutation invariant, because it acts as the identity on multiplicity spaces.
 
-Run $`\Gamma(\Pi-\mathrm{id})+\mathcal D_\kappa`$ from $`I/2^N`$. The exact Casimir identity gives $`\operatorname{Tr}(\rho(t)C)=3N/4`$ at every time. Set $`\sigma(t)=\Pi\rho(t)`$. Its phase-QFI is
+Run $`\Gamma(\Pi-\mathrm{id})+\mathcal D_\kappa`$ from $`I/2^N`$. The exact Casimir identity gives $`\mathrm{Tr}(\rho(t)C)=3N/4`$ at every time. Set $`\sigma(t)=\Pi\rho(t)`$. Its phase-QFI is
 
 ```math
 F_Q(\sigma(t),S_z)=4\sum_j q_j(t)j^2

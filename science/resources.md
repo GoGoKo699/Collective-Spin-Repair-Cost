@@ -62,7 +62,7 @@ The no-repair SQL baseline uses the explicitly specified global spin-sector rese
 The finite-time converse retains the actual initial-spin resource through a term of order
 
 ```math
-e^{-\kappa T}\operatorname{Tr}(\rho(0)C).
+e^{-\kappa T}\mathrm{Tr}(\rho(0)C).
 ```
 
 Since the initial moment can be order $`N^2`$, a fixed preparation time of order $`\kappa^{-1}`$ does not uniformly erase its Heisenberg-order contribution. A late-time limit, or the explicit logarithmic-in-$`N`$ horizon, is part of the claim. The exact no-repair drift has the sharper decay factor $`e^{-2\kappa T}`$; the repair inequality uses a convenient weaker exponent after Young's inequality.
@@ -72,7 +72,7 @@ The output time is prescribed, rather than selected by uncharged postselection o
 For every physical $`N`$-spin state with any protected ancilla, the later collective signal generator $`G=\mathbf n\cdot\mathbf S\otimes I_A`$ has spectrum in $`[-N/2,N/2]`$. Therefore
 
 ```math
-F_Q(\rho_{SA},G)\le4\operatorname{Var}_{\rho_{SA}}G\le N^2.
+F_Q(\rho_{SA},G)\le4\mathrm{Var}_{\rho_{SA}}G\le N^2.
 ```
 
 Protected ancillas do not enlarge that generator's spectral range. The moment proof also bounds their assistance through the physical reduced-state Casimir. This does not say that protected ancillas or their physical implementation are free in a laboratory; it says that even granting them does not evade the stated repair converse.

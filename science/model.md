@@ -41,7 +41,7 @@ During preparation, the joint state has a piecewise continuous, finite-dimension
 
 ```math
 \dot\rho
-=(\mathcal N_\kappa\otimes\operatorname{id}_A)(\rho)
+=(\mathcal N_\kappa\otimes\mathrm{id}_A)(\rho)
 +\mathcal K_t(\rho)+\mathcal R_t(\rho).
 \tag{2}
 ```
@@ -70,7 +70,7 @@ Their strengths, nonlinearities, number of terms and joint sensor–ancilla stru
 
 Ordinary collective operators and their polynomials satisfy (4). The admitted class is deliberately more generous: some nonuniform, rotation-invariant exchange interactions also preserve $`C`$. Conversely, covariance of a complete noise channel under permutations does not imply (4) for its individual jump operators. The independent jumps in (1) provide an example of that distinction.
 
-Finite instantaneous sector-preserving channels are also allowed as ideal supplied operations. It is sufficient that their Kraus operators commute with $`C\otimes I_A`$; such a channel preserves $`\operatorname{Tr}(C\rho)`$. The terminal collective gate used in the construction is one such operation. Its finite-pulse implementation and physical cost are treated separately in [resources](resources.md).
+Finite instantaneous sector-preserving channels are also allowed as ideal supplied operations. It is sufficient that their Kraus operators commute with $`C\otimes I_A`$; such a channel preserves $`\mathrm{Tr}(C\rho)`$. The terminal collective gate used in the construction is one such operation. Its finite-pulse implementation and physical cost are treated separately in [resources](resources.md).
 
 ### Bounded-support repair
 
@@ -128,7 +128,7 @@ The homogeneous generator in (7) is load-bearing. A bound using the global Casim
 Define the initial second moment
 
 ```math
-x_0=\operatorname{Tr}[C\rho_S(0)],
+x_0=\mathrm{Tr}[C\rho_S(0)],
 \qquad
 0\le x_0\le\frac{N(N+2)}4.
 \tag{8}
@@ -158,7 +158,7 @@ The bound is uniform over the free control strengths, the finite protected regis
 With no repair, the sharper exact moment identity is
 
 ```math
-\operatorname{Tr}[C\rho_S(T)]
+\mathrm{Tr}[C\rho_S(T)]
 =\frac{3N}{4}
 +\left(x_0-\frac{3N}{4}\right)e^{-2\kappa T}.
 \tag{10}

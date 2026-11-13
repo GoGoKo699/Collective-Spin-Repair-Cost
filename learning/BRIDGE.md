@@ -8,7 +8,7 @@ The sole educational anchor is **[Breuer–Petruccione, *The Theory of Open Quan
 
 ## 1. States and generators
 
-A density operator $`\rho`$ describes the spin ensemble, including a mixed state. An observable $`O`$ has mean $`\langle O\rangle=\operatorname{Tr}(\rho O)`$. A Markov master equation specifies the instantaneous change of the state,
+A density operator $`\rho`$ describes the spin ensemble, including a mixed state. An observable $`O`$ has mean $`\langle O\rangle=\mathrm{Tr}(\rho O)`$. A Markov master equation specifies the instantaneous change of the state,
 
 ```math
 \dot\rho=\mathcal L(\rho),
@@ -27,7 +27,7 @@ The Hamiltonian gives coherent evolution. Each dissipator gives an allowed irrev
 
 Rates are included in the jump operators. A term written as $`\Gamma\mathcal D[M]`$ can be written as $`\mathcal D[\sqrt\Gamma M]`$. If another convention places an extra factor of two in a dissipator, its numerical rate must be translated before comparing formulas. Here $`\hbar=1`$: a Hamiltonian norm and a squared jump norm both have units of inverse time.
 
-The protected auxiliary register $`A`$ is part of a joint density operator $`\rho_{SA}`$. Noise acts on the sensors as $`\mathcal N_\kappa\otimes\operatorname{id}_A`$. Joint entanglement with $`A`$ is allowed. A coupling that moves a resource from $`A`$ into the sensors must still obey the specified control conditions; adding a protected register does not remove its sensor support from the budget. In particular, the preserved observable is the sensors' $`C\otimes I_A`$. Preserving a different total spin formed from sensors and controller would permit transfers between their individual sectors and would change the model. The protected system strengthens the converse's allowance without becoming another carrier of the later signal.
+The protected auxiliary register $`A`$ is part of a joint density operator $`\rho_{SA}`$. Noise acts on the sensors as $`\mathcal N_\kappa\otimes\mathrm{id}_A`$. Joint entanglement with $`A`$ is allowed. A coupling that moves a resource from $`A`$ into the sensors must still obey the specified control conditions; adding a protected register does not remove its sensor support from the budget. In particular, the preserved observable is the sensors' $`C\otimes I_A`$. Preserving a different total spin formed from sensors and controller would permit transfers between their individual sectors and would change the model. The protected system strengthens the converse's allowance without becoming another carrier of the later signal.
 
 ## 2. Translate the noise rate through one observable
 
@@ -50,8 +50,8 @@ The $`X`$ and $`Y`$ components obey the same equation. Thus a Bloch vector decay
 The adjoint generator is defined by trace duality,
 
 ```math
-\operatorname{Tr}[O\mathcal L(\rho)]
-=\operatorname{Tr}[\mathcal L^\dagger(O)\rho].
+\mathrm{Tr}[O\mathcal L(\rho)]
+=\mathrm{Tr}[\mathcal L^\dagger(O)\rho].
 ```
 
 For the chosen convention,
@@ -135,7 +135,7 @@ F_Q(\rho,G)
 The standard variance bound and $`G^2\le C\otimes I_A`$ give
 
 ```math
-F_Q\le4\operatorname{Var}(G)\le4x.
+F_Q\le4\mathrm{Var}(G)\le4x.
 ```
 
 Also $`G`$ has spectral range $`N`$, including on the joint sensor–auxiliary space, so $`F_Q\le N^2`$. These are local-QFI statements; they do not by themselves establish a globally unambiguous phase estimate or a complete sensing runtime.

@@ -44,7 +44,7 @@ The constructive protocol pumps $`m`$ individual spins to a fixed positive polar
 
 ```math
 F_{p,m}=\mathbb E\!\left[(K^2+N-m)
-\tanh^2(\operatorname{atanh}(p)K)\right],
+\tanh^2(\mathrm{atanh}(p)K)\right],
 ```
 
 where $`K`$ is a sum of $`m`$ independent signs of mean $`p`$. With one pumped spin, this reduces to $`p^2N`$. For fixed positive $`p`$ and growing $`m`$, its order is $`N+m^2`$. The [construction](construction.md) derives the formula and gives a uniform lower bound.
